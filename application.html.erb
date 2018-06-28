@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>カクホ-プロフェッショナルを身近に-</title>
+    <link rel="stylesheet" href="/app/assets/stylesheets/application.css">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="layout">
+      <div class="header">
+        <div class="header-in">
+          <a class="logo" href="/top">
+            <img src="" alt="kakuho">
+          </a>
+        <div class="headline">
+          <div class="main">
+            プロフェッショナルを身近に
+          </div>
+        </div>
+        </div>
+        <nav>
+          <ul>
+            <li class="fee">
+              <a href="/fee">料金体系</a>
+            </li>
+            <li class="fp">
+              <a href="/fp">専門家とは</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+
+
+    <%= yield %>
+  </body>
+</html>
